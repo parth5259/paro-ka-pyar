@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billu & Paro's Journey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="backgroundMusic" src="../second/images/music.mp3" autoplay loop></audio>
+    <div class="container">
+        <header>
+            <h1>Welcome Billu!</h1>
+            <p>It's been a wonderful journey together. We've faced so much together and yet here we are, stronger than ever!🤜🤛</p>
+        </header>
+        
+        <section class="gallery">
+            <h2>Our Memories</h2>
+            <div class="gallery-images">
+                <img src="images/image1.jpeg" alt="Memory 1" onclick="openModal(this)">
+                <img src="images/image2.jpg" alt="Memory 2" onclick="openModal(this)">
+                <img src="images/image3.jpeg" alt="Memory 3" onclick="openModal(this)">
+                <img src="images/image4.jpeg" alt="Memory 4" onclick="openModal(this)">
+            </div>
+        </section>
+        
+        <section class="love-letter">
+            <h2>A Love Letter for Billu💞</h2>
+            <p>Dear Billu,</p>
+            <p>
+                🌹 From the moment we met, my life has changed in the most beautiful ways. 💖
+                Your smile is the sunshine that lights up my darkest days, and your laughter is the melody that makes my heart dance. 🎶
+                Together, we have created countless memories that I will cherish forever. 🌠
+                Remember our first date? We were so nervous but excited, and it turned out to be magical. ✨
+                The way you hold my hand reassures me that everything will be alright, no matter what challenges come our way. 💪
+                I love the way you always know how to make me laugh, even when I'm feeling down. 😂
+                Your kindness and generosity inspire me to be a better person every day. 🌷
+                I am so grateful for every moment we spend together, from our late-night talks to our silly adventures. 🚀
+                My love for you grows stronger with each passing day, and I can't wait to see what the future holds for us. 🌈
+                Let's continue to create beautiful memories and build a life filled with love and happiness. 🏠
+                I love you more than words can express, and I am so lucky to have you by my side. 💕
+            </p>
+            <p>Yours forever, Paro 💍</p>
+        </section>
+
+        <section class="quiz-section">
+            <h2>A Quiz for Billu</h2>
+            <div class="quiz">
+                <p>What is Paro's favorite color?</p>
+                <div>
+                    <input type="radio" id="color1" name="color" value="Blue">
+                    <label for="color1">Blue</label>
+                </div>
+                <div>
+                    <input type="radio" id="color2" name="color" value="Red">
+                    <label for="color2">Red</label>
+                </div>
+                <div>
+                    <input type="radio" id="color3" name="color" value="Green">
+                    <label for="color3">Green</label>
+                </div>
+            </div>
+            <div class="quiz">
+                <p>Where did we first meet?</p>
+                <div>
+                    <input type="radio" id="meet1" name="meet" value="Sapno me">
+                    <label for="meet1">Sapno me</label>
+                </div>
+                <div>
+                    <input type="radio" id="meet2" name="meet" value="College">
+                    <label for="meet2">College</label>
+                </div>
+                <div>
+                    <input type="radio" id="meet3" name="meet" value="Park">
+                    <label for="meet3">Park</label>
+                </div>
+            </div>
+            <div class="quiz">
+                <p>What is Paro's favorite movie?</p>
+                <div>
+                    <input type="radio" id="movie1" name="movie" value="Inception">
+                    <label for="movie1">Inception</label>
+                </div>
+                <div>
+                    <input type="radio" id="movie2" name="movie" value="Titanic">
+                    <label for="movie2">Titanic</label>
+                </div>
+                <div>
+                    <input type="radio" id="movie3" name="movie" value="Avatar">
+                    <label for="movie3">Avatar</label>
+                </div>
+            </div>
+            <div class="quiz">
+                <p>Which one is Paro's favourite?</p>
+                <div>
+                    <input type="radio" id="pet1" name="pet" value="Chikoos">
+                    <label for="pet1">Chikoos</label>
+                </div>
+                <div>
+                    <input type="radio" id="pet2" name="pet" value="Mangoes">
+                    <label for="pet2">Mangoes</label>
+                </div>
+                <div>
+                    <input type="radio" id="pet3" name="pet" value="Melons">
+                    <label for="pet3">Melons</label>
+                </div>
+            </div>
+            <button onclick="checkAnswers()">Submit Answers</button>
+        </section>
+
+        <section class="proposal-section">
+            <h2>Paro's Proposal</h2>
+            <p>Will you be my reason to smile again??? Billu?</p>
+            <button class="proposal-button" onclick="showPopup()">Yes</button>
+        </section>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2>She Said Yes!🥳🥳</h2>
+            <div class="gif-container">
+                <img src="images/gif1.webp" alt="Celebration GIF">
+                <img src="images/gif2.webp" alt="Celebration GIF">
+                <img src="images/gif3.webp" alt="Celebration GIF">
+            </div>
+        </div>
+    </div>
+
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Billu & Paro. All rights reserved.</p>
+    </footer>
+
+    <script src="love_story.js"></script>
+</body>
+</html>

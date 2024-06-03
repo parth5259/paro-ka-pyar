@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #a16d6d;
+    display: flex; /* Center content vertically */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center; /* Center content horizontally */
+}
+
+.background-image {
+    background-image: url("https://img.freepik.com/free-photo/dark-style-valentines-day-celebration_23-2151133837.jpg?t=st=1717147896~exp=1717151496~hmac=c5053b9dead25867d1839ad72a4365eec59f7fc99c6fe3397a69c2abe829771d&w=996"); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place background image behind other elements */
+}
+
+.info-box {
+    padding: 20px;
+    background-color: rgba(188, 180, 180, 0.8); /* Semi-transparent white background */
+    border-radius: 5px;
+    
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p {
+    font-size: 1.2em;
+    color: #5f0f1d;
+    margin-bottom: 10px;
+}
+
+#timer {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #2f120b;
+    position: relative; /* Required for party popper animation */
+}
+#continue-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.2s ease; /* Add button click effect */
+}
+
+#continue-button:hover {
+    background-color: #3e8e41;
+}
+
+#continue-button:active { /* Add button click effect */
+    transform: translateY(2px);
+}
