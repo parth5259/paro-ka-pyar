@@ -3,7 +3,7 @@ function checkAnswers() {
         color: 'Blue',
         meet: 'College',
         movie: 'Inception',
-        pet: 'Chikoos'
+        pet: 'Butterscotch'
     };
 
     const selectedColor = document.querySelector('input[name="color"]:checked');
@@ -14,7 +14,7 @@ function checkAnswers() {
     if (selectedColor && selectedMeet && selectedMovie && selectedPet) {
         if (selectedColor.value === answers.color && selectedMeet.value === answers.meet &&
             selectedMovie.value === answers.movie && selectedPet.value === answers.pet) {
-            alert('Great job, Billu! You know Paro so well!, Dont forget to send some Chikoos 🫣🫣');
+            alert('Great job, Billu! You know Paro so well!,');
         } else {
             alert('Oops! Some answers are incorrect. Try again!');
         }
